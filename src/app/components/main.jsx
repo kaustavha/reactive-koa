@@ -2,6 +2,7 @@
 
 var React = require('react'),
   mui = require('material-ui'),
+  Nav = require('./nav.jsx'),
   RaisedButton = mui.RaisedButton;
 
 var Main = React.createClass({
@@ -15,7 +16,7 @@ var Main = React.createClass({
         <h2>example project</h2>
 
         <RaisedButton label="Super Secret Password" primary={true} onTouchTap={this._handleTouchTap} />
-
+        <Nav/>
       </div>
     );
   },
@@ -23,7 +24,7 @@ var Main = React.createClass({
   _handleTouchTap: function() {
     alert('1-2-3-4-5');
   }
-  
+
 });
 
 module.exports = Main;
